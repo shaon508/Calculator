@@ -1,22 +1,19 @@
 import 'package:flutter/material.dart';
-
-import 'calculator_screen.dart';
+import 'calculatorScreen.dart';
 
 void main() {
-  runApp(const MyApp());
+  return runApp(CalculatorApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class CalculatorApp extends StatelessWidget {
+  const CalculatorApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Calculator',
-      theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      home: const CalculatorScreen(),
+      theme: ThemeData.dark(),
+      home: calculatorScreen(),
     );
   }
 }
